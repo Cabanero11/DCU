@@ -1622,6 +1622,27 @@ input, select, textarea {
 		height: 200px;  /* Ajusta la altura según tus necesidades */
 	}
 
+
+	.d-block-w-50 {
+		width: 60%;
+		margin: 0 auto; /* Establece márgenes automáticos izquierdo y derecho para centrar horizontalmente */
+    	max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+	}
+
+	.card-header {
+		background-color: #002F8C;
+		color: #FFFFFF;
+		font-size: 1.5em;
+		height: 80px;
+	}
+
+	.card-body-asesoramiento {
+		margin-top: 100px;
+		padding: 10px;
+		margin-bottom: 0;
+		height: 100px;
+	}
+
 	/* Estilo para el contenido del tbody */
 	table.table tbody {
 		color: black; /* Color de texto para el contenido del tbody */
