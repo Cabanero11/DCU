@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+			
 	</head>
 	<body>
 		<div id="page-wrapper">
@@ -56,46 +57,19 @@
 			<!-- Features -->
 				<section id="features">
 					<div class="container">
+						<h1>FAQS</h1>
 						<div class="row">
-							<div class="col-6 col-6-medium col-12-small">
-
-								<!-- Feature #1 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="images/estudiando.png" alt="" /></a>
-
-									</section>
-
+							<div class="col-8 col-12-medium">
+								<button class="accordion">Section 1</button>
+								<div class="panel">
+									<p>Lorem ipsum...</p>
+								</div>
 							</div>
-							<div class="col-6 col-6-medium col-12-small">
-
-								<!-- Feature #2 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="images/estudiando.png" alt="" /></a>
-
-									</section>
-
-							</div>
-						</div>
-					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-6 col-6-medium col-12-small">
-
-								<!-- Feature #3 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="images/estudiando.png" alt="" /></a>
-
-									</section>
-
-							</div>
-							<div class="col-6 col-6-medium col-12-small">
-
-								<!-- Feature #4 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="images/estudiando.png" alt="" /></a>
-
-									</section>
-
+							<div class="col-8 col-12-medium">
+								<button class="accordion">Section 1</button>
+								<div class="panel">
+									<p>Lorem ipsum...</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -160,6 +134,44 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				var acc = document.getElementsByClassName("accordion");
+				var i;
+
+				for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+					/* Toggle between adding and removing the "active" class,
+					to highlight the button that controls the panel */
+					this.classList.toggle("active");
+
+					/* Toggle between hiding and showing the active panel */
+					var panel = this.nextElementSibling;
+					if (panel.style.display === "block") {
+					panel.style.display = "none";
+					} else {
+					panel.style.display = "block";
+					}
+				});
+				}
+			</script>
+
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+	
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+		  panel.style.maxHeight = null;
+		} else {
+		  panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	  });
+	}
+	</script>
 
 	</body>
 </html>
