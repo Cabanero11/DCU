@@ -1764,6 +1764,37 @@ input, select, textarea {
 	}
 
 
+	.botonNormalCompra {
+		background-color: #002F8C;
+		color: #fff;
+		padding: 5px 15px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+		margin-right: -100px;
+	}
+
+	.botonNormalCompra:hover {
+		background-color: #003bb0;
+		color: #fff;
+		padding: 5px 15px;		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+		margin-right: -100px;
+	}
+
+	.botonNormalCompra:active {
+		background-color: #01256f;
+		color: #fff;
+		padding: 5px 15px;		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+		margin-right: -100px;
+	}
+
 
 	.noticias-text {
 		color: #fff;
@@ -1885,6 +1916,14 @@ input, select, textarea {
 		background-color: #002F8C;
 	  }
 
+	  .tab-ase {
+		flex: 1;
+		text-align: left;
+		padding: 20px;
+		cursor: pointer;
+		background-color: #002F8C;
+	  }
+
 	  .tab-mat {
 		flex: 1;
 		text-align: center;
@@ -1897,6 +1936,10 @@ input, select, textarea {
 		background-color: #023bac;
 	  }
 
+	  .tab-ase:hover {
+		background-color: #002F8C;
+	  }
+
 	  .tab:active {
 		background-color: #022c7f;
 	  }
@@ -1907,6 +1950,10 @@ input, select, textarea {
 
 	  .tab-mat:active {
 		background-color: #022c7f;
+	  }
+
+	  .tab-ase:active {
+		background-color: #002F8C;
 	  }
   
 	  .tab img {
@@ -1922,6 +1969,19 @@ input, select, textarea {
 	  .tab-content.active {
 		display: block;
 	  }
+
+	  #flecha {
+		margin-right: 20px;
+	  }
+
+	  #materialBlanco {
+		margin-right: 20px;
+	  }
+
+	  #flecha:hover {
+		filter: invert(61%) sepia(22%) saturate(4087%) hue-rotate(200deg) brightness(91%) contrast(89%);
+	  }
+	  
 
 
 	  .nuevo-nav {
@@ -2011,6 +2071,15 @@ input, select, textarea {
 	  }
 
 	  .nuevo-nav-selectividad{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px;
+		background-color: #fff;
+		margin-left: 20px;
+	  }
+
+	  .nuevo-nav-biologia{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
