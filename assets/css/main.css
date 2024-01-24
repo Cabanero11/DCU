@@ -1817,8 +1817,20 @@ input, select, textarea {
 		cursor: pointer;
 		background-color: #002F8C;
 	  }
+
+	  .tab-mat {
+		flex: 1;
+		text-align: center;
+		padding: 20px;
+		cursor: pointer;
+		background-color: #002F8C;
+	  }
   
 	  .tab:hover {
+		background-color: #023bac;
+	  }
+
+	  .tab-mat:hover {
 		background-color: #023bac;
 	  }
   
@@ -1826,7 +1838,19 @@ input, select, textarea {
 		max-width: 50px;
 		height: auto;
 	  }
+
+	  .tab-mat img {
+		max-width: 50px;
+		height: auto;
+	  }
   
+	  .tab-content {
+		display: none;
+		padding: 20px;
+		width: 100%;
+		box-sizing: border-box;
+	  }
+
 	  .tab-content {
 		display: none;
 		padding: 20px;
@@ -1839,7 +1863,7 @@ input, select, textarea {
 	  }
 
 
-	  #nuevo-nav {
+	  .nuevo-nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -1848,16 +1872,16 @@ input, select, textarea {
 		margin-left: 20px;
 	  }
   
-	  #nuevo-nav img {
+	  .nuevo-nav img {
 		max-width: 50px;
 		height: auto;
 	  }
   
-	  #nuevo-nav h2 {
+	  .nuevo-nav h2 {
 		margin: 0;
 	  }
   
-	  #nuevo-nav h3 {
+	  .nuevo-nav h3 {
 		color: #555;
 	  }
 	  
