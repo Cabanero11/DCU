@@ -1830,8 +1830,16 @@ input, select, textarea {
 		background-color: #023bac;
 	  }
 
+	  .tab:active {
+		background-color: #022c7f;
+	  }
+
 	  .tab-mat:hover {
 		background-color: #023bac;
+	  }
+
+	  .tab-mat:active {
+		background-color: #022c7f;
 	  }
   
 	  .tab img {
