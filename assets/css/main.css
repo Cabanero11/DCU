@@ -1699,6 +1699,39 @@ input, select, textarea {
 	}
 
 
+	.botonNormal2-asesoramiento {
+		background-color: #0057D8;
+		color: #fff;
+		padding: 5px 15px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+		margin-right: 60px;
+	}
+
+	.botonNormal2-asesoramiento:hover {
+		background-color: #3da1f9;
+		color: #fff;
+		padding: 5px 15px;		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+		margin-right: 60px;
+
+	}
+
+	.botonNormal2-asesoramiento:active {
+		background-color: #0059a6;
+		color: #fff;
+		padding: 5px 15px;		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+		margin-right: 60px;
+	}
+
+
 	.botonNormal3 {
 		background-color: #002F8C;
 		color: #fff;
@@ -1765,6 +1798,11 @@ input, select, textarea {
 		width: 60%;
 		margin: 0 auto; /* Establece márgenes automáticos izquierdo y derecho para centrar horizontalmente */
     	max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+	}
+
+	.d-block-w-40 {
+		margin: 0 auto; /* Establece márgenes automáticos izquierdo y derecho para centrar horizontalmente */
+    	max-width: 462px; /* Ajusta el ancho máximo según tus necesidades */
 	}
 
 	.card-header {
@@ -2145,6 +2183,7 @@ input, select, textarea {
 			margin: 0 0 0.25em 0;
 		}
 
+
 		#features p {
 			font-size: 1.0em;
 			color: #000;
@@ -2192,6 +2231,12 @@ input, select, textarea {
 		#features .texto-centradito {
 			top: 50%;
 			left: 50%;
+		}
+
+		#features .texto-centradito-asesoramiento {
+			top: 50%;
+			left: 50%;
+			margin-right: 120px;
 		}
 
 		#features .col-6-medium-cursos {
