@@ -1796,6 +1796,22 @@ input, select, textarea {
 	}
 
 
+	.btn-secondary {
+		color: #616161;
+		background-color: #ffffff;
+		border-color: #616161;
+		padding: 10px 10px;
+		width: 600px;
+		text-align: left;
+		font-size: 1em;
+	}
+
+	.dropdown-toggle::after {
+		margin-left: 0.255em; /* Ajusta este valor según tu preferencia */
+	  }
+	
+
+
 	.noticias-text {
 		color: #fff;
 		font-size: 1.0em;
