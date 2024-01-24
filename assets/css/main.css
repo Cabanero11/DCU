@@ -1772,7 +1772,40 @@ input, select, textarea {
 		color: #fff;
 		margin-right: 15px;
 	}
-	  
+
+
+	.tabs {
+		display: flex;
+	  }
+  
+	  .tab {
+		flex: 1;
+		text-align: center;
+		padding: 20px;
+		border: 1px solid #ccc;
+		cursor: pointer;
+	  }
+  
+	  .tab:hover {
+		background-color: #f0f0f0;
+	  }
+  
+	  .tab img {
+		max-width: 50px;
+		height: auto;
+	  }
+  
+	  .tab-content {
+		display: none;
+		padding: 20px;
+		border: 1px solid #ccc;
+		width: 100%;
+		box-sizing: border-box;
+	  }
+  
+	  .tab-content.active {
+		display: block;
+	  }
 	  
 
 	  
