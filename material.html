@@ -62,6 +62,7 @@
 				<div class="container">
 					<h1>Material</h1>
 				  	<div class="row">
+						<!-- TABS -->
 						<div class="tabs">
 							<div class="tab-mat" onclick="changeTab('clasesRepaso')">
 								<h7>Clases de  repaso</h7>
@@ -69,78 +70,186 @@
 							<div class="tab-mat" onclick="changeTab('cienciasTecnologia')">
 								<h7>Ciencias y Tecnología</h7>
 							</div>
-							<div class="tab-mat" onclick="changeTab(3)">
+							<div class="tab-mat" onclick="changeTab('humanidades')">
 								<h7>Humanidades y Ciencias Sociales</h7>
 							</div>
-							<div class="tab-mat" onclick="changeTab(4)">
+							<div class="tab-mat" onclick="changeTab('artes')">
 								<h7>Artes</h7>
 							</div>
-							<div class="tab-mat" onclick="changeTab(5)">
+							<div class="tab-mat" onclick="changeTab('accesoUniversidad')">
 								<h7>Acceso a la Universidad</h7>
 							</div>
-							<div class="tab-mat" onclick="changeTab(6)">
+							<div class="tab-mat" onclick="changeTab('tecnicasEstudio')">
 								<h7>Técnicas de estudio</h7>
 							</div>
-							<div class="tab-mat" onclick="changeTab(7)">
+							<div class="tab-mat" onclick="changeTab('selectividad')">
 								<h7>Selectividad</h7>
 							</div>
-						</div> <!-- TABS -->
-						  
-						<nav id="nuevo-nav-clasesRepaso" class="nuevo-nav">
-							<img src="images/iconoMaterial.png" alt="Inicio">
-							<h3>Biología y Geología</h3>
-							<h8>Ciencias y Tecnología</h8>
-							<img src="images/iconoMaterialFavoritoRelleno.png" alt="Inicio" style="margin-right: 60px;">
-						</nav>
-						<nav id="nuevo-nav-clasesRepaso" class="nuevo-nav">
-							<img src="images/iconoMaterial.png" alt="Inicio">
-							<h3>Cultura Audiovisual I</h3>
-							<h8>Artes</h8>
-							<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
-						</nav>
-						<nav id="nuevo-nav-clasesRepaso" class="nuevo-nav">
-							<img src="images/iconoMaterial.png" alt="Inicio">
-							<h3>Dibujo Técnico I</h3>
-							<h8>Ciencias y Tecnología</h8>
-							<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
-						</nav>
-						<nav id="nuevo-nav-clasesRepaso" class="nuevo-nav">
-							<img src="images/iconoMaterial.png" alt="Inicio">
-							<h3>Economía</h3>
-							<h8>Humanidades y Ciencias Sociales</h8>
-							<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
-						</nav>
-						<nav id="nuevo-nav-clasesRepaso" class="nuevo-nav">
-							<img src="images/iconoMaterial.png" alt="Inicio">
-							<h3>Filosofía</h3>
-							<h8>Humanidades y Ciencias Sociales</h8>
-							<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
-						</nav>
-						<nav id="nuevo-nav-clasesRepaso" class="nuevo-nav">
-							<img src="images/iconoMaterial.png" alt="Inicio">
-							<h3>Fundamentos del Arte I</h3>
-							<h8>Artes</h8>
-							<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
-						</nav>
-
-
-						<nav id="nuevo-nav-cienciasTecnologia" class="nuevo-nav">
-							<img src="images/iconoMaterial.png" alt="Inicio">
-							<h3>Cultura Audiovisual I</h3>
-							<h8>Artes</h8>
-							<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
-						</nav>
-
-
-						<nav class="nuevo-nav">
-							<img src="images/iconoMaterial.png" alt="Inicio">
-							<h3>Cultura Audiovisual I</h3>
-							<h8>Artes</h8>
-							<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
-						</nav>
+						</div> 
 						
+						  
+						<!-- REPASO -->
+						<div class="tab-content" id="clasesRepaso">
+							<nav class="nuevo-nav-clasesRepaso">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Biología y Geología</h3>
+								<h8>Ciencias y Tecnología</h8>
+								<img src="images/iconoMaterialFavoritoRelleno.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-clasesRepaso">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Cultura Audiovisual I</h3>
+								<h8>Artes</h8>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-clasesRepaso">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Dibujo Técnico I</h3>
+								<h8>Ciencias y Tecnología</h8>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-clasesRepaso">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Economía</h3>
+								<h8>Humanidades y Ciencias Sociales</h8>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-clasesRepaso">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Filosofía</h3>
+								<h8>Humanidades y Ciencias Sociales</h8>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-clasesRepaso">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Fundamentos del Arte I</h3>
+								<h8>Artes</h8>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>	
+						</div>
 
-						<!-- NAVS -->
+						<!-- CIENCIAS -->
+						<div class="tab-content" id="cienciasTecnologia">
+							<nav class="nuevo-nav-cienciasTecnologia">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Biología y Geología</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 600px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-cienciasTecnologia">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Dibujo Técnico I</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 630px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+						</div>
+						
+						<!-- HUMANIDADES -->
+						<div class="tab-content" id="humanidades">
+							<nav class="nuevo-nav-humanidades">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Economía</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 600px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-humanidades">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Filosofía</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 620px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+						</div>
+
+						<!-- ARTES -->
+						<div class="tab-content" id="artes">
+							<nav class="nuevo-nav-artes">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Cultura Audiovisual I</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 600px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+						</div>
+
+
+						<!-- ACCESO UNIVERSIDAD -->
+						<div class="tab-content" id="accesoUniversidad">
+							<nav class="nuevo-nav-accesoUniversidad">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Repaso Universidad Ciencias</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 600px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-accesoUniversidad">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Repaso Universidad Humanidades</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 550px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-accesoUniversidad">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Repaso Universidad Economia</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 600px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+						</div>
+
+						<!-- TECNICAS ESTUDIO -->
+						<div class="tab-content" id="tecnicasEstudio">
+							<nav class="nuevo-nav-tecnicasEstudio">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Ténicas de estudio iniciado</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 600px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-tecnicasEstudio">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Ténicas de estudio avanzado</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 590px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+						</div>
+
+						<!-- SELECTIVIDAD -->
+						<div class="tab-content" id="selectividad">
+							<nav class="nuevo-nav-selectividad">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Examen 2023</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 600px;"></a>
+								<img src="images/iconoMaterialFavoritoRelleno.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-selectividad">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Examen 2022</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 600px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-selectividad">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Examen 2021</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 600px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-selectividad">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Examen 2020</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 600px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-selectividad">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Examen 2019</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 600px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+							<nav class="nuevo-nav-selectividad">
+								<img src="images/iconoMaterial.png" alt="Inicio">
+								<h3>Examen 2018</h3>
+								<a href="#"><img src="images/iconoDescargar.png" alt="Inicio" style="margin-left: 600px;"></a>
+								<img src="images/iconoMaterialFavorito.png" alt="Inicio" style="margin-right: 60px;">
+							</nav>
+						</div>
+
+						
 				  	</div>
 				</div>
 			  </section>
@@ -208,15 +317,15 @@
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 			<script>
-			function changeTab(tabValue) {
-				// Oculta todos los nuevo-nav
-				document.querySelectorAll('.nuevo-nav').forEach(function(nav) {
-				nav.style.display = 'none';
-				});
+				function changeTab(tabId) {
+					// Oculta todos los tab-content
+					document.querySelectorAll('.tab-content').forEach(function(tabContent) {
+					tabContent.style.display = 'none';
+					});
 
-				// Muestra el nuevo-nav correspondiente al tab clickeado
-				document.getElementById('nuevo-nav-' + tabValue).style.display = 'flex';
-			}
-			  </script>
+					// Muestra el tab-content correspondiente al tab clickeado
+					document.getElementById(tabId).style.display = 'flex';
+				}
+			</script>
 	</body>
 </html>
