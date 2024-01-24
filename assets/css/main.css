@@ -674,7 +674,26 @@ input, select, textarea {
 						}
 
 		}
-
+		@media screen and (max-width: 1680px) {
+			.row > * {
+				padding: 2vw;
+			}
+		}
+		
+		@media screen and (max-width: 1280px) {
+			.row > * {
+				padding: 1vw;
+			}
+		}
+		
+		/* ... */
+		
+		@media screen and (max-width: 736px) {
+			.row > * {
+				padding: 0.5vw;
+			}
+		}
+		
 		@media screen and (max-width: 1280px) {
 
 			.row {
@@ -686,7 +705,7 @@ input, select, textarea {
 
 				.row > * {
 					box-sizing: border-box;
-					padding: 30px;
+					padding: 2vw;
 				}
 
 				.row.gtr-uniform > * > :last-child {
@@ -1180,7 +1199,7 @@ input, select, textarea {
 
 				.row > * {
 					box-sizing: border-box;
-					padding: 15px;
+					padding: 2vw;
 				}
 
 				.row.gtr-uniform > * > :last-child {
@@ -1753,6 +1772,15 @@ input, select, textarea {
 		color: #FFFFFF;
 		font-size: 1.5em;
 		height: 80px;
+	}
+
+	.card-header1 {
+		background-color: #002F8C;
+		color: #FFFFFF;
+		font-size: 1.5em;
+		height: 80px;
+		width: 83.5%;
+		margin: 0 auto;
 	}
 
 	.card-body-asesoramiento {
@@ -2491,7 +2519,7 @@ input, select, textarea {
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				display: block;
-				height: 44px;
+				height: 10vw;
 				right: 0; /* Cambié left a right */
 				position: fixed;
 				top: 0;
@@ -2565,7 +2593,7 @@ input, select, textarea {
 				transition: transform 0.5s ease;
 				display: block;
 				width: 100%;
-				height: 375px; /* Ajusta la altura según sea necesario */
+				height: 50vh; /* Ajusta la altura según sea necesario */
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
@@ -2581,9 +2609,9 @@ input, select, textarea {
 					color: #ffffff;
 					background-color: #002F8C;
 					text-decoration: none;
-					font-size: 1.25em;
+					font-size: 1.5vw;
 					line-height: 2em;
-					padding: 0.625em 1.5em 0.325em 1.5em;
+					padding: 1.25vw 3vw 0.65vw 3vw;
 					border-top: solid 1px #373d40;
 					border-bottom: solid 1px rgba(0, 0, 0, 0.4);
 				}
