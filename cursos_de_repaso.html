@@ -9,6 +9,7 @@
 		<title>Bachilleratos</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
@@ -18,34 +19,34 @@
 				<section id="header">
 					<div class="container">
 						<div class="row">
-							<div class="col-12-medium no-margin ">
-								
+							<div class="col-12">
 								<!-- Nav -->
-									<nav id="nav">
-										<a href="index.html" id="logo" style="margin-left: 0px;">
+									<nav id="nav" style="position: relative;" >
+										<a href="index.html" id="logo">
 											<img src="images/logo.png" alt="Inicio">
 										</a>
 										<a href="cursos.html" id="carmenMartinez">CARMEN MARTINEZ</a>
 										<a href="horarios.html">Horarios</a>
 										<a href="calificaciones.html">Calificaciones</a>
 										<a href="chat.html" style="margin-right: 30px;">Chat</a>
-										
+
 										<a href="cursos.html" id="headerNav">Cursos</a>
 										<a href="noticias.html">Noticias</a>
-										<a href="asesoramiento.html">Asesoramiento</a>
+										<a href="asesoramiento.html" >Asesoramiento</a>
 										<a href="material.html">Material</a>
 										<a href="calendario.html">Calendario</a>
 										<a href="contacto.html">Contacto</a>
 										<a href="faqs.html">FAQS</a>
-										<a href="carrito.html" style="margin-top: 100px;">
+										<a href="carrito.html" style="margin-top: 200px;">
 											<img src="images/carrito.png" alt="Carrito">
 										</a>
 										<input type="text" placeholder="Buscar..." class="textBoxBuscar"> 
 										<button type="button" class="botonInvertido">Buscar</button>
 										<a href="buscar.html">
-											<button type="button" onclick="location.href='iniciarSesion.html'" class="botonResaltado">Cerrar Sesión</button>
+											<button type="button" onclick="location.href='iniciarSesion.html'" class="botonResaltado" style="width: 5%; padding: 10px 0px;">Iniciar Sesión</button>
 										</a>
 									</nav>
+
 							</div>
 						</div>
 					</div>
@@ -55,52 +56,22 @@
 			<!-- Features -->
 				<section id="features">
 					<div class="container">
-						<h1>Cursos</h1>
+						<h1>Clases de repaso</h1>
 						<div class="row">
-							<div class="col-6 col-6-medium col-12-small">
-
-								<!-- Feature #1 -->
-									<section>
-										<a href="cursos_de_repaso.html" class="bordered-feature-image"><img src="images/EstudiantesCursos1.png" alt="" />
-											<div class="image-centered-text">Cursos de repaso</div>
-										</a>
-										
-									</section>
-
+							<div class="col-4 col-12-medium">
+								<h3>
+									Clases dinámicas de repaso con debates, proyectos creativos, y resolución de problemas 
+									en grupo, centradas en la retroalimentación constructiva para impulsar el rendimiento académico.
+								</h3>
 							</div>
-							<div class="col-6 col-6-medium col-12-small">
-
-								<!-- Feature #2 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="images/EstudiantesCursos2.png" alt="" />
-											<div class="image-centered-text">Técnicas de estudio iniciación</div>
-										</a>
-									</section>
-
+							<div class="col-8 col-12-medium">
+								<img class="d-block-w-30" src="images/clasesDeRepaso.png" alt="Asesoramiento">
 							</div>
 						</div>
-					</div>
-					<div class="container">
 						<div class="row">
-							<div class="col-6 col-6-medium-cursos col-12-small">
-
-								<!-- Feature #3 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="images/EstudiantesCursos3.png" alt="" />
-											<div class="image-centered-text">Preparación de acceso a la universidad</div>
-										</a>
-									</section>
-
-							</div>
-							<div class="col-6 col-6-medium col-12-small">
-
-								<!-- Feature #4 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="images/EstudiantesCursos4.png" alt="" />
-											<div class="image-centered-text">Técnicas de estudio avanzado</div>
-										</a>
-									</section>
-
+							<div class="col-12 col-12-medium">
+								<h2 class="texto-centradito">Inscribite ya en Clases de repaso</h2><br>
+								<button type="button" class="botonNormal">Inscribirse</button>
 							</div>
 						</div>
 					</div>
@@ -165,6 +136,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 	</body>
 </html>

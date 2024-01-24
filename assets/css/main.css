@@ -1467,7 +1467,22 @@ input, select, textarea {
 		background: #fff;
 		padding: 10px;
 		margin: 0 0 1.0em 0;
+		text-align: center;
+		position: relative;
 	}
+
+		
+	.image-centered-text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		font-size: 2.5em;
+	} 
+
+
+
 
 		.bordered-feature-image img {
 			display: block;
@@ -1606,6 +1621,10 @@ input, select, textarea {
 		font-size: 0.9em;
 	}
 
+
+
+
+
 	.card-title {
 		color: #000;
 		font-size: 1.4em;
@@ -1627,6 +1646,12 @@ input, select, textarea {
 		width: 60%;
 		margin: 0 auto; /* Establece márgenes automáticos izquierdo y derecho para centrar horizontalmente */
     	max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+	}
+
+	.d-block-w-30 {
+		width: 60%;
+		margin: 0 auto; /* Establece márgenes automáticos izquierdo y derecho para centrar horizontalmente */
+    	max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
 	}
 
 	.card-header {
@@ -1815,6 +1840,18 @@ input, select, textarea {
 			margin: 0 0 0.25em 0;
 		}
 
+		#features h3 {
+			font-size: 1.50em;
+			color: #000;
+			margin: 0 0 0.25em 0;
+		}
+
+		#features p {
+			font-size: 1.0em;
+			color: #000;
+			margin: 0 0 0.25em 0;
+		}
+
 		#features h1 {
 			font-size: 2.0em;
 			color: #000;
@@ -1851,6 +1888,12 @@ input, select, textarea {
 		#features .col-6-medium {
 			flex: 50%;
 			display: flex;
+		}
+
+		#features .texto-centradito {
+			top: 50%;
+			left: 50%;
+			position: relative;
 		}
 
 		#features .col-6-medium-cursos {
