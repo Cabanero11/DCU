@@ -1681,6 +1681,10 @@ input, select, textarea {
 
 
 
+	.noticias-text {
+		color: #fff;
+		font-size: 1.0em;
+	}
 
 
 	.card-title {
@@ -1769,13 +1773,12 @@ input, select, textarea {
 		margin-right: 15px;
 	}
 	  
-
 	  
 
 	  
 	  
 
-	/* Estilo para el contenido del tbody */
+	/* Estilo para el contenido del tbody */boton
 	table.table tbody {
 		color: black; /* Color de texto para el contenido del tbody */
 	}
@@ -1911,6 +1914,12 @@ input, select, textarea {
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+		}
+
+		#features h5 {
+			font-size: 1.30em;
+			color: #fff;
+			margin: 0 0 0.25em 0;
 		}
 
 		#features p {
