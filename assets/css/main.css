@@ -1892,6 +1892,10 @@ input, select, textarea {
 	  .nuevo-nav h3 {
 		color: #555;
 	  }
+
+	  #nuevo-nav-clasesRepaso {
+		display: flex;
+	  }
 	  
 	  
 
