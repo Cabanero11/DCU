@@ -1680,6 +1680,38 @@ input, select, textarea {
 	}
 
 
+	.botonNormal3 {
+		background-color: #002F8C;
+		color: #fff;
+		padding: 5px 15px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+		margin-right: 30px;
+	}
+
+	.botonNormal3:hover {
+		background-color: #003bb0;
+		color: #fff;
+		padding: 5px 15px;		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+		margin-right: 30px;
+	}
+
+	.botonNormal3:active {
+		background-color: #01256f;
+		color: #fff;
+		padding: 5px 15px;		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+		margin-right: 30px;
+	}
+
+
 
 	.noticias-text {
 		color: #fff;
@@ -1780,14 +1812,14 @@ input, select, textarea {
   
 	  .tab {
 		flex: 1;
-		text-align: center;
+		text-align: left;
 		padding: 20px;
-		border: 1px solid #ccc;
 		cursor: pointer;
+		background-color: #002F8C;
 	  }
   
 	  .tab:hover {
-		background-color: #f0f0f0;
+		background-color: #023bac;
 	  }
   
 	  .tab img {
@@ -1798,14 +1830,37 @@ input, select, textarea {
 	  .tab-content {
 		display: none;
 		padding: 20px;
-		border: 1px solid #ccc;
 		width: 100%;
 		box-sizing: border-box;
 	  }
-  
+
 	  .tab-content.active {
 		display: block;
 	  }
+
+
+	  #nuevo-nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px;
+		background-color: #fff;
+		margin-left: 20px;
+	  }
+  
+	  #nuevo-nav img {
+		max-width: 50px;
+		height: auto;
+	  }
+  
+	  #nuevo-nav h2 {
+		margin: 0;
+	  }
+  
+	  #nuevo-nav h3 {
+		color: #555;
+	  }
+  
 	  
 
 	  
@@ -1953,6 +2008,19 @@ input, select, textarea {
 			font-size: 1.30em;
 			color: #fff;
 			margin: 0 0 0.25em 0;
+		}
+
+		#features h6 {
+			font-size: 1.0em;
+			color: #000;
+			margin: 0 0 0.25em 0;
+		}
+
+		#features h7 { /* Igual que h4 pero blanco*/
+			font-size: 1.25em;
+			color: #fff;
+			position: relative;
+			transform: translate(-50%, -50%);
 		}
 
 		#features p {
