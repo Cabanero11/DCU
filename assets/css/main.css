@@ -674,7 +674,26 @@ input, select, textarea {
 						}
 
 		}
-
+		@media screen and (max-width: 1680px) {
+			.row > * {
+				padding: 2vw;
+			}
+		}
+		
+		@media screen and (max-width: 1280px) {
+			.row > * {
+				padding: 1vw;
+			}
+		}
+		
+		/* ... */
+		
+		@media screen and (max-width: 736px) {
+			.row > * {
+				padding: 0.5vw;
+			}
+		}
+		
 		@media screen and (max-width: 1280px) {
 
 			.row {
@@ -686,7 +705,7 @@ input, select, textarea {
 
 				.row > * {
 					box-sizing: border-box;
-					padding: 30px;
+					padding: 2vw;
 				}
 
 				.row.gtr-uniform > * > :last-child {
@@ -1180,7 +1199,7 @@ input, select, textarea {
 
 				.row > * {
 					box-sizing: border-box;
-					padding: 15px;
+					padding: 2vw;
 				}
 
 				.row.gtr-uniform > * > :last-child {
@@ -1496,7 +1515,22 @@ input, select, textarea {
 		background: #fff;
 		padding: 10px;
 		margin: 0 0 1.0em 0;
+		text-align: center;
+		position: relative;
 	}
+
+		
+	.image-centered-text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		font-size: 2.5em;
+	} 
+
+
+
 
 		.bordered-feature-image img {
 			display: block;
@@ -1637,6 +1671,75 @@ input, select, textarea {
 		font-size: 0.9em;
 	}
 
+
+	.botonNormal2 {
+		background-color: #0057D8;
+		color: #fff;
+		padding: 5px 15px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+	}
+
+	.botonNormal2:hover {
+		background-color: #3da1f9;
+		color: #fff;
+		padding: 5px 15px;		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+	}
+
+	.botonNormal2:active {
+		background-color: #0059a6;
+		color: #fff;
+		padding: 5px 15px;		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+	}
+
+
+	.botonNormal3 {
+		background-color: #002F8C;
+		color: #fff;
+		padding: 5px 15px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+		margin-right: 30px;
+	}
+
+	.botonNormal3:hover {
+		background-color: #003bb0;
+		color: #fff;
+		padding: 5px 15px;		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+		margin-right: 30px;
+	}
+
+	.botonNormal3:active {
+		background-color: #01256f;
+		color: #fff;
+		padding: 5px 15px;		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 0.9em;
+		margin-right: 30px;
+	}
+
+
+
+	.noticias-text {
+		color: #fff;
+		font-size: 1.0em;
+	}
+
+
 	.card-title {
 		color: #000;
 		font-size: 1.4em;
@@ -1653,7 +1756,235 @@ input, select, textarea {
 		height: 200px;  /* Ajusta la altura según tus necesidades */
 	}
 
-	/* Estilo para el contenido del tbody */
+
+	.d-block-w-50 {
+		width: 60%;
+		margin: 0 auto; /* Establece márgenes automáticos izquierdo y derecho para centrar horizontalmente */
+    	max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+	}
+
+	.d-block-w-30 {
+		width: 60%;
+		margin: 0 auto; /* Establece márgenes automáticos izquierdo y derecho para centrar horizontalmente */
+    	max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+	}
+
+	.card-header {
+		background-color: #002F8C;
+		color: #FFFFFF;
+		font-size: 1.5em;
+		height: 80px;
+	}
+
+	.card-header1 {
+		background-color: #002F8C;
+		color: #FFFFFF;
+		font-size: 1.5em;
+		height: 80px;
+		width: 83.5%;
+		margin: 0 auto;
+	}
+
+	.card-body-asesoramiento {
+		margin-top: 100px;
+		padding: 10px;
+		margin-bottom: 0;
+		height: 100px;
+	}
+
+
+	.accordion-button {
+		background-color: #002F8C;
+		color: #fff;
+		padding: 10px 0px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 1.2em;
+	}
+
+	.accordion-button:active {
+		background-color: #024adb;
+		color: #fff;
+		padding: 10px 0px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 1.2em;
+	}
+
+	.accordion-button:not(.collapsed) {
+		color: #fff;
+		background-color: #011a4d;
+	}
+
+	.accordion-body {
+		background-color: #002F8C;
+		color: #fff;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 1.0em;
+
+	}
+
+
+	.accordion-button::after {
+		color: #fff;
+		margin-right: 15px;
+	}
+
+
+	.tabs {
+		display: flex;
+		gap: 10;
+	  }
+  
+	  .tab {
+		flex: 1;
+		text-align: left;
+		padding: 20px;
+		cursor: pointer;
+		background-color: #002F8C;
+	  }
+
+	  .tab-mat {
+		flex: 1;
+		text-align: center;
+		padding: 20px;
+		cursor: pointer;
+		background-color: #002F8C;
+	  }
+  
+	  .tab:hover {
+		background-color: #023bac;
+	  }
+
+	  .tab:active {
+		background-color: #022c7f;
+	  }
+
+	  .tab-mat:hover {
+		background-color: #023bac;
+	  }
+
+	  .tab-mat:active {
+		background-color: #022c7f;
+	  }
+  
+	  .tab img {
+		max-width: 50px;
+		height: auto;
+	  }
+
+	  .tab-mat img {
+		max-width: 50px;
+		height: auto;
+	  }
+  
+	  .tab-content.active {
+		display: block;
+	  }
+
+
+	  .nuevo-nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px;
+		background-color: #fff;
+		margin-left: 20px;
+	  }
+  
+	  .nuevo-nav img {
+		max-width: 50px;
+		height: auto;
+	  }
+  
+	  .nuevo-nav h2 {
+		margin: 0;
+	  }
+  
+	  .nuevo-nav h3 {
+		color: #555;
+	  }
+	  
+	  .tab-content{
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+		background-color: #fff;
+		margin-left: 20px;
+		flex-direction: column;
+	  }
+
+
+	  .nuevo-nav-clasesRepaso{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px;
+		background-color: #fff;
+		margin-left: 20px;
+	  }
+
+	  .nuevo-nav-cienciasTecnologia{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px;
+		background-color: #fff;
+		margin-left: 20px;
+	  }
+
+	  .nuevo-nav-humanidades{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px;
+		background-color: #fff;
+		margin-left: 20px;
+	  }
+
+	  .nuevo-nav-accesoUniversidad{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px;
+		background-color: #fff;
+		margin-left: 20px;
+	  }
+
+	  .nuevo-nav-artes{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px;
+		background-color: #fff;
+		margin-left: 20px;
+	  }
+
+	  .nuevo-nav-tecnicasEstudio{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px;
+		background-color: #fff;
+		margin-left: 20px;
+	  }
+
+	  .nuevo-nav-selectividad{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px;
+		background-color: #fff;
+		margin-left: 20px;
+	  }
+	  
+
+	/* Estilo para el contenido del tbody */boton
 	table.table tbody {
 		color: black; /* Color de texto para el contenido del tbody */
 	}
@@ -1776,6 +2107,52 @@ input, select, textarea {
 			margin: 0 0 0.25em 0;
 		}
 
+		#features h3 {
+			font-size: 1.50em;
+			color: #000;
+			margin: 0 0 0.25em 0;
+		}
+
+		#features h4 {
+			font-size: 1.25em;
+			color: #000;
+			position: relative;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		#features h5 {
+			font-size: 1.30em;
+			color: #fff;
+			margin: 0 0 0.25em 0;
+		}
+
+		#features h6 {
+			font-size: 1.0em;
+			color: #000;
+			margin: 0 0 0.25em 0;
+		}
+
+		#features h7 { /* Igual que h4 pero blanco*/
+			font-size: 1.25em;
+			color: #fff;
+			position: relative;
+			transform: translate(-50%, -50%);
+		}
+
+		#features h8 {
+			font-size: 1.50em;
+			color: #737373;
+			margin: 0 0 0.25em 0;
+		}
+
+		#features p {
+			font-size: 1.0em;
+			color: #000;
+			margin: 0 0 0.25em 0;
+		}
+
 		#features h1 {
 			font-size: 2.0em;
 			color: #000;
@@ -1812,6 +2189,11 @@ input, select, textarea {
 		#features .col-6-medium {
 			flex: 50%;
 			display: flex;
+		}
+
+		#features .texto-centradito {
+			top: 50%;
+			left: 50%;
 		}
 
 		#features .col-6-medium-cursos {
@@ -2139,7 +2521,7 @@ input, select, textarea {
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				display: block;
-				height: 44px;
+				height: 10vw;
 				right: 0; /* Cambié left a right */
 				position: fixed;
 				top: 0;
@@ -2213,7 +2595,7 @@ input, select, textarea {
 				transition: transform 0.5s ease;
 				display: block;
 				width: 100%;
-				height: 375px; /* Ajusta la altura según sea necesario */
+				height: 50vh; /* Ajusta la altura según sea necesario */
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
@@ -2229,9 +2611,9 @@ input, select, textarea {
 					color: #ffffff;
 					background-color: #002F8C;
 					text-decoration: none;
-					font-size: 1.25em;
+					font-size: 1.5vw;
 					line-height: 2em;
-					padding: 0.625em 1.5em 0.325em 1.5em;
+					padding: 1.25vw 3vw 0.65vw 3vw;
 					border-top: solid 1px #373d40;
 					border-bottom: solid 1px rgba(0, 0, 0, 0.4);
 				}
