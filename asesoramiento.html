@@ -9,6 +9,7 @@
 		<title>Bachilleratos</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
@@ -19,17 +20,17 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
-
 								<!-- Nav -->
-									<nav id="nav">
-										<a href="index.html" id="logo">
+								<nav id="nav" style="position: relative; margin-top: 80px;">
+										<a href="index.html" id="logo" >
 											<img src="images/logo.png" alt="Inicio">
 										</a>
 										
+
 										<a href="cursos.html" id="carmenMartinez">CARMEN MARTINEZ</a>
 										<a href="horarios.html">Horarios</a>
 										<a href="calificaciones.html">Calificaciones</a>
-										<a href="chat.html">Chat</a>
+										<a href="chat.html" >Chat</a>
 										<a id="espacio-menu"></a>
 										<a href="cursos.html">Cursos</a>
 										<a href="noticias.html">Noticias</a>
@@ -42,7 +43,9 @@
 											<img src="images/carrito.png" alt="Carrito">
 										</a>
 										<input type="text" placeholder="Buscar..." class="textBoxBuscar"> 
-										<button type="button" onclick="location.href='buscar.html'" class="botonInvertido">Buscar</button>
+										<button type="button" class="botonInvertido">Buscar</button>
+										<a href="buscar.html">											
+										</a>
 										<a href="iniciarSesion.html">
 											<button type="button" onclick="location.href='iniciarSesion.html'" class="botonResaltado" id="last-child">Iniciar Sesión</button>
 										</a>
@@ -57,47 +60,49 @@
 			<!-- Features -->
 				<section id="features">
 					<div class="container">
+						<h1>Asesoramiento</h1>
 						<div class="row">
-							<div class="col-6 col-6-medium col-12-small">
+							<img class="d-block-w-50" src="images/asesoramiento1.png" alt="Asesoramiento">
 
-								<!-- Feature #1 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="images/estudiando.png" alt="" /></a>
 
-									</section>
-
-							</div>
-							<div class="col-6 col-6-medium col-12-small">
-
-								<!-- Feature #2 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="images/estudiando.png" alt="" /></a>
-
-									</section>
-
-							</div>
-						</div>
-					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-6 col-6-medium col-12-small">
-
-								<!-- Feature #3 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="images/estudiando.png" alt="" /></a>
-
-									</section>
-
-							</div>
-							<div class="col-6 col-6-medium col-12-small">
-
-								<!-- Feature #4 -->
-									<section>
-										<a href="#" class="bordered-feature-image"><img src="images/estudiando.png" alt="" /></a>
-
-									</section>
-
-							</div>
+							<div class="card-deck">
+								<div class="card" style="width: 18rem;">
+									<div class="card-header">Profesores</div>
+									<div class="card-body">
+										<h5 class="card-title">Conoce a nuestros profesores</h5>
+										  <p class="card-text">
+											Nuestros profesores son muy buenos ademas de ...</p>
+										  <button type="button" class="botonNormal">Ver noticia</button>
+									</div>
+								</div> <!-- Fin de la card -->
+								<div class="card" style="width: 18rem;">
+									<div class="card-header">Cursos</div>
+									<div class="card-body">
+										<h5 class="card-title">Infórmate sobre los cursos del centro</h5>
+										  <p class="card-text">
+											Aqui podras infórmate sobre los diferentes ...</p>
+										  <button type="button" class="botonNormal">Ver noticia</button>
+									</div>
+								</div> <!-- Fin de la card -->
+								<div class="card" style="width: 18rem;">
+									<div class="card-header">Orientación Profesional</div>
+									<div class="card-body">
+										<h5 class="card-title">¿No sabes que carrera elegir?</h5>
+										  <p class="card-text">
+											Con tantas carreras para elegir te vendria bien ayuda, ¿no?...</p>
+										  <button type="button" class="botonNormal" onclick="location.href='asesoramiento_profesional.html'">Ver noticia</button>
+									</div>
+								</div> <!-- Fin de la card -->
+								<div class="card" style="width: 18rem;">
+									<div class="card-header">Material</div>
+									<div class="card-body">
+										<h5 class="card-title">Infórmate sobre el material del centro</h5>
+										  <p class="card-text">
+											Tenemos diferentes tipos de materiales de los cuales ...</p>
+										  <button type="button" class="botonNormal">Ver noticia</button>
+									</div>
+								</div> <!-- Fin de la card -->
+							</div> <!-- Fin de card deck-->
 						</div>
 					</div>
 				</section>
@@ -161,6 +166,10 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	</body>
 </html>
