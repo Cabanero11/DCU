@@ -200,6 +200,10 @@ input, select, textarea {
 				width: calc(100% - 50px);
 			}
 
+			a.link.depth-0 {
+				font-size: 1em;
+			}
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3018,7 +3022,7 @@ input, select, textarea {
 					color: #ffffff;
 					background-color: #002F8C;
 					text-decoration: none;
-					font-size: 1.5vw;
+					font-size: 3vw;
 					line-height: 2em;
 					padding: 1.25vw 3vw 0.65vw 3vw;
 					border-top: solid 1px #373d40;
@@ -3027,10 +3031,18 @@ input, select, textarea {
 
 					#navPanel .link:first-child {
 						border-top: 0;
+						font-size: 1em;
+					}
+
+					#navPanel .link:not(:last-child) {
+						border-bottom: 0;
+						font-size: 4vw;
 					}
 
 					#navPanel .link:last-child {
 						border-bottom: 0;
+						font-size: 4.5vw;
+						color: #F0A30A;
 					}
 
 			body.navPanel-visible #page-wrapper {
@@ -3049,6 +3061,9 @@ input, select, textarea {
 				transform: translateX(0);
 			}
 
+			a .link depth-0 {
+				font-size: 1em;
+			}
 					
 		#navPanel .link {
 			display: flex;
