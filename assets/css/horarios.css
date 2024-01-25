@@ -1,0 +1,46 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.rows {
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+.cell {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    color: #000;
+}
+
+.header .cell {
+    font-weight: bold;
+    color : #fff;
+    background-color: #002F8C;
+}
+
+.rows:last-child .cell {
+    border-bottom: 1px solid #ccc;
+}
+
+.rows:last-child .cell:last-child {
+    border-bottom: none;
+}
+
+.schedule-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Media Query for small devices */
+@media screen and (max-width: 600px) {
+    .cell {
+        font-size: 12px;
+    }
+}
