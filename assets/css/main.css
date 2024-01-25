@@ -1996,6 +1996,10 @@ input, select, textarea {
 		height: 80px;
 	  }
 
+	  #p-negrita {
+		font-weight: 500;
+	  }
+
 	  .tab-mat {
 		flex: 1;
 		text-align: center;
