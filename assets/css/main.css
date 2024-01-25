@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200");
+/*@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+* No hay helvetica en google fonts, esta es parecida, pero me gusta como queda con la Yanone
+*/
 
 /*
 	Halcyonic by HTML5 UP
@@ -29,6 +32,14 @@
 }
  #last-child:hover {
                 background-color: #C28409; 
+ }
+
+ #carrito-activo {
+	border-bottom: solid 0.8pt white;
+ }
+
+ #carrito-activo:hover {
+	border-bottom: solid 0.8pt rgb(194, 194, 194);
  }
 
  #carrito:hover {
@@ -1843,6 +1854,35 @@ input, select, textarea {
 	}
 
 
+	.botonNormalEliminar {
+		background-color: #0057D8;
+		color: #fff;
+		padding: 5px 15px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 1.0em;
+	}
+
+	.botonNormalEliminar:hover {
+		background-color: #3da1f9;
+		color: #fff;
+		padding: 5px 15px;		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 1.0em;
+	}
+
+	.botonNormalEliminar:active {
+		background-color: #0059a6;
+		color: #fff;
+		padding: 5px 15px;		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 1.em;
+	}
+
+
 	.btn-secondary {
 		color: #616161;
 		background-color: #ffffff;
@@ -2177,6 +2217,31 @@ input, select, textarea {
 		padding: 2px;
 		background-color: #fff;
 		text-align: center;
+	  }
+
+	  .nuevo-nav-carrito{
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		padding: 2px;
+		background-color: #fff;
+	  }
+
+	  #features .nuevo-nav-carrito h6 {
+		margin-right: -0.80em;
+		margin-left: 14em;
+		font-size: 1.1em;
+	}
+
+	  .nuevo-nav-carrito-pagar{
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		padding: 2px;
+		background-color: #fff;
+		margin-left: 46%;
 	  }
 
 
