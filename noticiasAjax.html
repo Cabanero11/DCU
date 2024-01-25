@@ -58,84 +58,14 @@
 					<div class="container">
 						<h1>Noticias</h1>
 						<div class="row">
-							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-								<ol class="carousel-indicators">
-								  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-								  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-								  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-								</ol>
-								<div class="carousel-inner">
-								  <div class="carousel-item active">
-									<img class="d-block w-100" src="images/EstudiantesCursos1.png" alt="Estudiantes1">
-									<div class="carousel-caption d-none d-md-block">
-										<h5>Estudiantes Universitarios</h5>
-										<p style="color: white;">Haz click para estudiar igual que ello</p>
-									  </div>
-								  </div>
-								  <div class="carousel-item">
-									<img class="d-block w-100" src="images/EstudiantesCursos4.png" alt="Estudiantes2">
-									<div class="carousel-caption d-none d-md-block">
-										<h5>Mas estudiantes!</h5>
-										<p style="color: white;">Uohhh que divertido estudiar</p>
-									  </div>
-								  </div>
-								  <div class="carousel-item">
-									<img class="d-block w-100" src="images/EstudiantesCursos3.png" alt="Estudiantes3">
-									<div class="carousel-caption d-none d-md-block">
-										<h5>El pepe</h5>
-										<p style="color: white;">Click para estudiar los mejores Pepes de la zona!</p>
-									  </div>
-								  </div>
-								</div>
-								<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								  </a>
-								  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								  </a>
-							  </div>
-
-
-							<div class="card-deck">
-								<div class="card" style="width: 18rem;">
-									<img class="card-img-top" src="images/noticias1.png" alt="Card image cap">
-									<div class="card-body">
-										<h5 class="card-title">Nuevas Clases</h5>
-										  <p class="card-text">
-											Estamos emocionados de anunciar nuestras nuevas clases de preparación de acceso a la universidad</p>
-										  <button type="button" class="botonNormal" onclick="verNoticia(1)">Ver noticia</button>
-									</div>
-								</div> <!-- Fin de la card -->
-								<div class="card" style="width: 18rem;">
-									<img class="card-img-top" src="images/noticias2.png" alt="Card image cap">
-									<div class="card-body">
-										<h5 class="card-title">Material de repaso</h5>
-										  <p class="card-text">
-											Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras. Clases</p>
-										  <button type="button" class="botonNormal" onclick="verNoticia(2)">Ver noticia</button>
-									</div>
-								</div> <!-- Fin de la card -->
-								<div class="card" style="width: 18rem;">
-									<img class="card-img-top" src="images/noticias3.png" alt="Card image cap">
-									<div class="card-body">
-										<h5 class="card-title">Reunión de repaso</h5>
-										  <p class="card-text">
-											Vamos a hacer una reunión para repasar en grupo, en ella hablaremos de cosas útiles. Si con ellas aprenderás mucho.</p>
-										  <button type="button" class="botonNormal" onclick="verNoticia(3)">Ver noticia</button>
-									</div>
-								</div> <!-- Fin de la card -->
-								<div class="card" style="width: 18rem;">
-									<img class="card-img-top" src="images/noticias4.png" alt="Card image cap">
-									<div class="card-body">
-										<h5 class="card-title">Nuevo Calendario de clases</h5>
-										  <p class="card-text">
-											Estamos emocionados de anunciar nuestras nuevo calendario de clases, en el podrás revisar los horarios de esta</p>
-										  <button type="button" class="botonNormal" onclick="verNoticia(4)">Ver noticia</button>
-									</div>
-								</div> <!-- Fin de la card -->
-							</div> <!-- Fin de card deck-->
+							<!-- Aqui iran las noticias-->
+							<div class="card-body">
+								<h5 class="card-title" id="tituloNoticia"></h5>
+								<p class="card-text" id="resumenNoticia"></p>
+								<p id="fechaNoticia"></p>
+								<img id="imagenNoticia" src="" alt="Imagen de la noticia">
+								<a id="enlaceNoticia" href="#">Leer más</a>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -203,11 +133,36 @@
 			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 			<script>
-				function verNoticia(numeroNoticia) {
-					window.location.href = 'noticiasAjax.html?noticia=' + numeroNoticia;
-				}
-			</script>
+			$(document).ready(function(){
+					// Obtener el número de noticia de la URL
+					var params = new URLSearchParams(window.location.search);
+					var numeroNoticia = params.get('noticia');
+
+					// Realizar la solicitud Ajax para obtener la noticia correspondiente
+					$.ajax({
+						url: "https://pedvalar.webs.upv.es/iap/rest/gva/noticias",
+						type: "GET",
+						dataType: "json",
+						success: function(data) {
+							var noticia = data[numeroNoticia - 1];
+							mostrarNoticia(noticia);
+						},
+						error: function(xhr, status, error) {
+							console.error("Error al obtener la noticia:", status, error);
+						}
+					});
+
+					function mostrarNoticia(noticia) {
+						$('#tituloNoticia').text(noticia.titulo);
+						$('#resumenNoticia').text(noticia.resumen);
+						$('#fechaNoticia').text('Fecha: ' + noticia.fecha);
+						$('#imagenNoticia').attr('src', noticia.imagen);
+						$('#enlaceNoticia').attr('href', noticia.enlace);
+					}
+				});
+			  </script>
 	</body>
 </html>
