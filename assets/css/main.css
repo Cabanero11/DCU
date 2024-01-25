@@ -1936,8 +1936,17 @@ input, select, textarea {
 		flex: 1;
 		text-align: left;
 		padding: 20px;
-		cursor: pointer;
+		cursor: default;
 		background-color: #002F8C;
+	  }
+
+	  .tab-ini {
+		flex: 1;
+		text-align: left;
+		padding: 20px;
+		cursor: default;
+		background-color: #002F8C;
+		height: 100px;
 	  }
 
 	  .tab-mat {
@@ -2103,6 +2112,44 @@ input, select, textarea {
 		background-color: #fff;
 		margin-left: 20px;
 	  }
+
+		#features form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+		}
+
+
+		.form-container {
+			background-color: #fff; /* Color de fondo del formulario */
+			border: 2px solid #002F8C; /* Borde azul del formulario */
+			border-radius: 10px; /* Radio de borde del formulario */
+			padding: 20px; /* Espaciado interior del formulario */
+		}
+		
+		.form-content {
+			text-align: center; /* Centrar el contenido del formulario */
+		}
+		
+		.form-content input[type="email"],
+		.form-content input[type="password"],
+		.form-content input[type="submit"] {
+			margin: 10px 0; /* Espaciado entre elementos */
+			display: block; /* Mostrar los elementos en bloque */
+		}
+		
+		.form-content input[type="checkbox"] {
+			margin-right: 5px; /* Margen derecho para el checkbox */
+		}
+	
+
+
+
+
+
+
+
 	  
 
 	/* Estilo para el contenido del tbody */boton
