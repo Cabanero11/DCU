@@ -1934,6 +1934,14 @@ input, select, textarea {
 	}
 
 
+	.card-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 30%;
+		margin-left: 37%;
+	}
+
 	.card-title {
 		color: #000;
 		font-size: 1.4em;
@@ -2119,13 +2127,23 @@ input, select, textarea {
 		margin-right: 20px;
 	  }
 
+	  #flecha:hover {
+		filter: invert(61%) sepia(22%) saturate(4087%) hue-rotate(200deg) brightness(91%) contrast(89%);
+	  }
+
+	  #flechaAzul {
+		filter: invert(61%) sepia(22%) saturate(4087%) hue-rotate(200deg) brightness(91%) contrast(89%);
+	  }
+
+	  #flechaAzul:hover {
+		filter: invert(31%) sepia(35%) saturate(4087%) hue-rotate(200deg) brightness(100%) contrast(99%);
+	  }
+
 	  #materialBlanco {
 		margin-right: 20px;
 	  }
 
-	  #flecha:hover {
-		filter: invert(61%) sepia(22%) saturate(4087%) hue-rotate(200deg) brightness(91%) contrast(89%);
-	  }
+	  
 	  
 
 

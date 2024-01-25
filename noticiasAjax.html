@@ -58,13 +58,20 @@
 					<div class="container">
 						<h1>Noticias</h1>
 						<div class="row">
-							<!-- Aqui iran las noticias-->
-							<div class="card-body">
-								<h5 class="card-title" id="tituloNoticia"></h5>
-								<p class="card-text" id="resumenNoticia"></p>
-								<p id="fechaNoticia"></p>
-								<img id="imagenNoticia" src="" alt="Imagen de la noticia">
-								<a id="enlaceNoticia" href="#">Leer más</a>
+							<!-- Aqui van las noticias-->
+							<div class="card-container">
+								<div class="card-deck">
+									<div class="card" style="width: 18rem; align-self: center;">
+										<img class="card-img-top" id="imagenNoticia" src="" alt="Imagen de la noticia">
+										<div class="card-body">
+											<h5 class="card-title" id="tituloNoticia"></h5>
+											<p class="card-text" id="resumenNoticia"></p>
+											<p id="fechaNoticia"></p>
+											<p><a id="enlaceNoticia" href="#">Enlace a la noticia</a><a href="noticias.html" style="margin-left: 20px;"><img src="images/iconoFlechaAzul.png" id="flechaAzul" alt="Atras"></a></p>
+
+										</div>
+									</div>
+								</div>	
 							</div>
 						</div>
 					</div>
@@ -137,11 +144,11 @@
 
 			<script>
 			$(document).ready(function(){
-					// Obtener el número de noticia de la URL
+					// Obtenemos el número de noticia de la URL
 					var params = new URLSearchParams(window.location.search);
 					var numeroNoticia = params.get('noticia');
 
-					// Realizar la solicitud Ajax para obtener la noticia correspondiente
+					// Realizar la solicitud Ajax
 					$.ajax({
 						url: "https://pedvalar.webs.upv.es/iap/rest/gva/noticias",
 						type: "GET",
@@ -151,7 +158,7 @@
 							mostrarNoticia(noticia);
 						},
 						error: function(xhr, status, error) {
-							console.error("Error al obtener la noticia:", status, error);
+							console.error("Error de CORS :( :", status, error);
 						}
 					});
 
