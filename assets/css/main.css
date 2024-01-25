@@ -2252,6 +2252,10 @@ input, select, textarea {
 
 
 
+
+
+
+
 		.form-container {
 			background-color: #fff; /* Color de fondo del formulario */
 			border-radius: 10px; /* Radio de borde del formulario */
@@ -2310,6 +2314,11 @@ input, select, textarea {
 		background-color: #002F8C; /* Fondo del th */
 		color: #fff; /* Color de texto para el th */
 	}
+
+
+
+
+	
 
 /* Header */
 
@@ -2551,9 +2560,41 @@ input, select, textarea {
 			border: 1px solid #ddd;
 			font-size: 1.1em;
 		  }
+
+		  #features tr.tr-gris {
+			padding: 10px;
+			border: 1px solid #ddd;
+			background-color: #ebebeb;
+			font-size: 1.1em;
+		  }
+
+		  #features td.tr-cal {
+			padding: 10px;
+			border: none;
+			background-color: #fff;
+			font-size: 1.1em;
+			border-bottom: 2px solid #002F8C;
+		  }
+
+		  #features td.td-cal-nor {
+			padding: 10px;
+			border: 1px solid #fff;
+			background-color: #fff;
+			font-size: 1.1em;
+		  }
+
+		  #features td.td-cal-nota {
+			padding: 8px; /* Ajusta según sea necesario */
+			border: 2px solid #002F8C;
+			background-color: #fff;
+			font-size: 1.1em;
+			box-sizing: border-box; /* Ajusta el modelo de caja para incluir el borde dentro del padding */
+		}
+		
+
 		  #features td {
 			padding-bottom: 5px;
-			border: 1px solid #ddd;
+			border: 2px solid #ddd;
 			font-size: 1.1em;
 			margin-left: 5px;
 			margin-right: 5px;
