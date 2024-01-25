@@ -2612,7 +2612,7 @@ input, select, textarea {
 
 		  #features td.td-cal-nota {
 			padding: 8px; /* Ajusta según sea necesario */
-			border: 2px solid #002F8C;
+			
 			background-color: #fff;
 			font-size: 1.1em;
 			box-sizing: border-box; /* Ajusta el modelo de caja para incluir el borde dentro del padding */
