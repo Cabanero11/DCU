@@ -1604,7 +1604,7 @@ input, select, textarea {
 		font-size: 0.6em;
 	}
 
-	.botonResaltado:hover {
+	.botonResaltado:focus {
 		background-color: #F0E10C;
 		color: #000;
 		padding: 14px 0px;
@@ -1684,6 +1684,17 @@ input, select, textarea {
 	}
 
 	.botonInvertido:hover {
+		background-color: transparent;
+		color: #1CA5B8;
+		border: 2px solid #26d4eb;
+		padding: 10px 10px;
+		border-radius: 5px;
+		cursor: pointer;
+		margin-left: 5px;
+		font-size: 1.0em;
+	}
+
+	.botonInvertido:focus {
 		background-color: transparent;
 		color: #1CA5B8;
 		border: 2px solid #26d4eb;
@@ -2326,7 +2337,7 @@ input, select, textarea {
 		position: relative;
 		background: #002F8C;
 		border-bottom: solid 1px #272d30;
-		box-shadow: inset 0px -1px 0px 0px #51575a;
+		box-shadow: inset 0px -1px 0px 0px #5b6164;
 		text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
 	}
 		#header > .container {
