@@ -1609,6 +1609,51 @@ input, select, textarea {
 		font-size: 0.6em;
 	}
 
+	.botonResaltado-ini {
+		background-color: #F0A30A;
+		color: #fff;
+		padding: 4px 0px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		width: 15%;
+		font-size: 1.0em;
+	}
+
+	.botonResaltado-ini:hover {
+		background-color: #F0E10C;
+		color: #fff;
+		padding: 4px 0px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		width: 15%;
+		font-size: 1.0em;
+	}
+
+	.botonResaltado-ini:active {
+		background-color: #C28409;
+		color: #fff;
+		padding: 4px 0px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		width: 15%;
+		font-size: 1.0em;
+	}
+
+	.form-check .form-check-input {
+		margin-left: 24.5em;
+		border: 2px solid;
+		border-color: #002F8C;
+	}
+
+	
+
+	#features #p-ini {
+		margin-right: 511px;
+	}
+
 	.botonInvertido {
 		background-color: transparent;
 		color: #1CA5B8;
@@ -2124,19 +2169,16 @@ input, select, textarea {
 	  }
 
 	  .nuevo-nav-iniciar{
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 20px;
+		display: block;
+		padding: 2px;
 		background-color: #fff;
-		margin-left: 20px;
+		text-align: center;
 	  }
 
 
 
 		.form-container {
 			background-color: #fff; /* Color de fondo del formulario */
-			border: 2px solid #002F8C; /* Borde azul del formulario */
 			border-radius: 10px; /* Radio de borde del formulario */
 			padding: 20px; /* Espaciado interior del formulario */
 		}
@@ -2145,11 +2187,33 @@ input, select, textarea {
 			text-align: center; /* Centrar el contenido del formulario */
 		}
 		
-		.form-content input[type="email"],
-		.form-content input[type="password"],
-		.form-content input[type="submit"] {
-			margin: 10px 0; /* Espaciado entre elementos */
-			display: block; /* Mostrar los elementos en bloque */
+		#features .email-pass {
+			margin: 0;
+			margin-left: 20px;
+			margin-right: 52px;
+			margin-top: 5%;
+			border: solid;
+			border-color: #002F8C;
+			color: #000;
+			width: 30%;
+			border-radius: 5px;
+			padding: 3px 3px;
+			padding-left: 15px;
+		}
+
+		.password-container {
+			position: relative;
+		}
+		
+		#features .fa-eye {
+			position: absolute;
+			top: 50%;
+			right: 5px; /* Ajusta según sea necesario */
+			transform: translateY(-50%);
+			cursor: pointer;
+			color: #002F8C;
+			margin-right: 399px;
+   			margin-top: 28px;
 		}
 	
 
@@ -2322,6 +2386,14 @@ input, select, textarea {
 			font-size: 1.50em;
 			color: #737373;
 			margin: 0 0 0.25em 0;
+		}
+
+		/*Iniciar sesion*/
+		#features h9 {
+			font-size: 1.50em;
+			color: #000;
+			margin: 0 0 0.1em 0;
+			text-align: center;
 		}
 
 
