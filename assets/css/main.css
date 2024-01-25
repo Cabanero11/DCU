@@ -3034,7 +3034,10 @@ input, select, textarea {
 						border-top: 0;
 						margin-top: 40px;
 						font-size: 1em;
-						color: #1CA6B9;
+					}
+
+					a.link.depth-0[href="carmenMartinez.html"] {
+						color: #1CA6B9 !important;
 					}
 
 					#navPanel .link:not(:last-child) {
