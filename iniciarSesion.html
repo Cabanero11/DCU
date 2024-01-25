@@ -61,7 +61,7 @@
 			<section id="features">
 				<div class="container">
 
-				  	<div class="row">
+				  	<div class="row" style="border: solid; border-color: #002F8C;">
 						<!-- TABS -->
 						<div class="tabs">
 							<div class="tab-ini">
@@ -70,13 +70,15 @@
 						<h1>Iniciar Sesion</h1>
 						  
 						<!-- REPASO -->
-						<div class="tab-content" id="biologia">
-							<nav class="nuevo-nav-biologia">
-								<img src="images/iconoMaterial.png" alt="Material">
-								<h3>Manual</h3>
-								<h6>80 € / 60 € para nuestros estudiantes</h6>
-								<button type="button" class="botonNormalCompra" onclick="location.href='carrito.html'">Añadir a la cesta</button>
-								<a href="material.html"><img src="images/iconoX.png" alt="Cerrar" style="margin-right: 60px;"></a>
+						<div class="tab-content-ini" id="iniciar">
+							<nav class="nuevo-nav-iniciar">
+								<form action="cursos.html" method="post" class="form-container">
+									<p><img src="images/iconoEmail.png"><input type="email" id="email" name="email" required></p>
+									<p><img src="images/iconoContraseña.png"><input type="password" id="password" name="password" required></p>
+									<input type="checkbox" id="remember" name="remember"><p>Recuerdame</p>
+									<input type="submit" class="botonResaltado" value="Iniciar Sesión">
+									<p>¿No tienes una cuenta? <a href="index.html">Regístrate</a></p>
+								<form>
 							</nav>
 						</div>
 						<div class="tabs">
