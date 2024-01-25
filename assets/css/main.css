@@ -46,6 +46,10 @@
 	border-bottom: solid 0.8pt rgb(194, 194, 194);
  }
 
+ #carrito:focus {
+	border-bottom: solid 0.8pt rgb(194, 194, 194);
+ }
+
  #carrito:hover {
 	
 	border-bottom: solid 0.8pt white;
