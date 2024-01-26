@@ -2764,7 +2764,8 @@ input, select, textarea {
 		}
 
 		#footer a {
-			color: #0048B7;
+			color: #fff;
+			text-decoration: none;
 		}
 
 		#footer .quote-list li {
