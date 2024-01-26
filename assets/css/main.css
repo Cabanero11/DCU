@@ -2100,6 +2100,19 @@ input, select, textarea {
 		background-color: #023bac;
 	  }
 
+
+	  .tab-mat.active {
+		flex: 1;
+		text-align: center;
+		padding: 20px;
+		cursor: pointer;
+		background-color: #0039ac;
+	  }
+
+	  .tab-mat.active:hover {
+		background-color: #0043c8;
+	  }
+
 	  .tab-ase:hover {
 		background-color: #002F8C;
 	  }
@@ -2108,8 +2121,12 @@ input, select, textarea {
 		background-color: #022c7f;
 	  }
 
+	  .tab-mat.active:active {
+		background-color: #022264;
+	  }
+
 	  .tab-mat:hover {
-		background-color: #023bac;
+		background-color: #034cdf;
 	  }
 
 	  .tab-mat:active {
@@ -2133,6 +2150,10 @@ input, select, textarea {
 	  .tab-content.active {
 		display: block;
 	  }
+
+
+	  
+
 
 	  #flecha {
 		margin-right: 20px;
@@ -2200,15 +2221,11 @@ input, select, textarea {
 
 	  .nuevo-nav-clasesRepaso{
 		display: flex;
-
+		align-items: center;
+		justify-content: space-between;
 		padding: 20px;
 		background-color: #fff;
 		margin-left: 20px;
-	  }
-
-	  .linea-de-asignatura{
-		margin-right: 50px;
-		margin-left:50px;
 	  }
 
 	  .nuevo-nav-cienciasTecnologia{

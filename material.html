@@ -63,25 +63,25 @@
 				  	<div class="row">
 						<!-- TABS -->
 						<div class="tabs">
-							<div class="tab-mat" onclick="changeTab('clasesRepaso')">
+							<div class="tab-mat" onclick="changeTab('clasesRepaso')" data-tab="clasesRepaso">
 								<h7>Clases de repaso</h7>
 							</div>
-							<div class="tab-mat" onclick="changeTab('cienciasTecnologia')">
+							<div class="tab-mat" onclick="changeTab('cienciasTecnologia')" data-tab="cienciasTecnologia">
 								<h7>Ciencias y Tecnología</h7>
 							</div>
-							<div class="tab-mat" onclick="changeTab('humanidades')">
+							<div class="tab-mat" onclick="changeTab('humanidades')" data-tab="humanidades">
 								<h7>Humanidades y Ciencias Sociales</h7>
 							</div>
-							<div class="tab-mat" onclick="changeTab('artes')">
+							<div class="tab-mat" onclick="changeTab('artes')" data-tab="artes">
 								<h7>Artes</h7>
 							</div>
-							<div class="tab-mat" onclick="changeTab('accesoUniversidad')">
+							<div class="tab-mat" onclick="changeTab('accesoUniversidad')" data-tab="accesoUniversidad">
 								<h7>Acceso a la Universidad</h7>
 							</div>
-							<div class="tab-mat" onclick="changeTab('tecnicasEstudio')">
+							<div class="tab-mat" onclick="changeTab('tecnicasEstudio')" data-tab="tecnicasEstudio">
 								<h7>Técnicas de estudio</h7>
 							</div>
-							<div class="tab-mat" onclick="changeTab('selectividad')">
+							<div class="tab-mat" onclick="changeTab('selectividad')" data-tab="selectividad">
 								<h7>Selectividad</h7>
 							</div>
 						</div> 
@@ -330,14 +330,22 @@
 
 			<script>
 				function changeTab(tabId) {
-					// Oculta todos los tab-content
-					document.querySelectorAll('.tab-content').forEach(function(tabContent) {
+				// Oculta todos los tab-content
+				document.querySelectorAll('.tab-content').forEach(function(tabContent) {
 					tabContent.style.display = 'none';
-					});
+				});
 
-					// Muestra el tab-content correspondiente al tab clickeado
-					document.getElementById(tabId).style.display = 'flex';
-				}
+				// Muestra el tab-content correspondiente al tab clickeado
+				document.getElementById(tabId).style.display = 'flex';
+
+				// Remueve la clase activa de todos los tabs
+				document.querySelectorAll('.tab-mat').forEach(function(tab) {
+					tab.classList.remove('active');
+				});
+
+				// Agrega la clase activa al tab clickeado
+				document.querySelector('.tab-mat[data-tab="' + tabId + '"]').classList.add('active');
+			}
 			</script>
 	</body>
 </html>
