@@ -20,6 +20,7 @@
 
 #nav a {
 	margin-right: 5px;
+	font-weight: bold;
 }
 
 #espacio-menu{
@@ -29,6 +30,7 @@
 #last-child {
 	width: 120px;
 	margin-right: 20px;
+	font-size: 18px;
 }
  #last-child:hover {
                 background-color: #C28409; 
