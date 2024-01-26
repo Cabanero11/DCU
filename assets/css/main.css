@@ -2200,11 +2200,15 @@ input, select, textarea {
 
 	  .nuevo-nav-clasesRepaso{
 		display: flex;
-		align-items: center;
-		justify-content: space-between;
+
 		padding: 20px;
 		background-color: #fff;
 		margin-left: 20px;
+	  }
+
+	  .linea-de-asignatura{
+		margin-right: 50px;
+		margin-left:50px;
 	  }
 
 	  .nuevo-nav-cienciasTecnologia{
