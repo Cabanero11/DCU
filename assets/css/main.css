@@ -29,8 +29,12 @@
 
 #last-child {
 	width: 120px;
+	height: 60px;
 	margin-right: 20px;
-	font-size: 18px;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	display: inline-block; 
 }
  #last-child:hover {
                 background-color: #C28409; 
@@ -1616,6 +1620,7 @@ input, select, textarea {
 		cursor: pointer;
 		width: 10%;
 		font-size: 0.6em;
+		font-weight: bold;
 	}
 
 	.botonResaltado:focus {
@@ -1695,6 +1700,7 @@ input, select, textarea {
 		margin-left: 5px;
 		font-size: 1.0em;
 		margin-right: 10px;
+		font-weight: bold;
 	}
 
 	.botonInvertido:hover {
@@ -1861,8 +1867,11 @@ input, select, textarea {
 		border-radius: 5px;
 		cursor: pointer;
 		font-size: 0.9em;
-		margin-right: -100px;
+		margin-left: 100px;
+    	margin-right: 40px; 
 	}
+
+
 
 	.botonNormalCompra:hover {
 		background-color: #003bb0;
@@ -2439,6 +2448,10 @@ input, select, textarea {
 
 			#header nav a#carmenMartinez:focus {
 				color: #26d7ee;
+			}
+
+			nav a:active:focus{
+				color:#c3c2c2;
 			}
 
 		.subpage #header > .container {
@@ -3068,8 +3081,12 @@ input, select, textarea {
 
 					#navPanel .link:last-child {
 						border-bottom: 0;
-						font-size: 4.5vw;
+						font-size: 5.5vw;
 						color: #F0A30A;
+						width: 120px;
+						height: 60px;
+						margin-right: 20px;						
+						font-family: Arial, sans-serif;
 					}
 
 			body.navPanel-visible #page-wrapper {
