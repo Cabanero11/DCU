@@ -2442,11 +2442,23 @@ input, select, textarea {
 				color: #1CA6B9;
 			}
 
+			#header nav a#carmenMartinez-activo {
+				color: rgb(30, 208, 232);
+			}
+
 			#header nav a#carmenMartinez:hover {
 				color: #26d7ee;
 			}
 
+			#header nav a#carmenMartinez-activo:hover {
+				color: #26d7ee;
+			}
+
 			#header nav a#carmenMartinez:focus {
+				color: #26d7ee;
+			}
+
+			#header nav a#carmenMartinez-activo:focus {
 				color: #26d7ee;
 			}
 
